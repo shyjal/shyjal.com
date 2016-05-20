@@ -1,108 +1,193 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Shyjal Raazi</title>
     <meta name="description" content="A startup enthusiast passionate about technology, finds joy in solving programming challenges and wireframing great UIs.I consider myself an explorer who have an eternal affinity towards travel, shopping, movies and internet.">
     <meta name="keywords" content="Shyjal Raazi,Raazi,Shyjal,Internet,Startup,Social,Media,Design,Technology,Web Programming">
     <style>
-        *,
-        *:before,
-        *:after {
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    
+    aside,
+    footer,
+    header,
+    hgroup,
+    section {
+        display: block;
+    }
+    
+    .container {
+        visibility: hidden;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        /*
+        padding-left: 15px;
+        padding-right: 15px;*/
+        width: 360px;
+        text-align: center;
+    }
+    
+    .container:after {
+        clear: both;
+    }
+    
+    .container .image {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-animation: shapechange 15s infinite ease-out;
+        -moz-animation: shapechange 15s infinite ease-out;
+        -o-animation: shapechange 15s infinite ease-out;
+        animation: shapechange 15s infinite ease-out;
+    }
+    
+    .container h1 {
+        font: 60px/1.2 'Pacifico', Helvetica, sans-serif;
+        color: #404d5b;
+    }
+    
+    .container p {
+        font: 18px/1.5 'Roboto', sans-serif;
+        color: #404d5b;
+    }
+    
+    i {
+        padding: 10px;
+    }
+    
+    a {
+        color: #404d5b;
+    }
+    
+    @-webkit-keyframes shapechange {
+        0% {
+            border-radius: 0% 50%;
         }
-        
-        aside,
-        footer,
-        header,
-        hgroup,
-        section {
-            display: block;
+        10% {
+            border-radius: 0% 50%;
         }
-        
+        15% {
+            border-radius: 50% 0%;
+        }
+        25% {
+            border-radius: 50% 0%;
+        }
+        30% {
+            border-radius: 50% 50%;
+        }
+        45% {
+            border-radius: 50% 50%;
+        }
+        50% {
+            border-radius: 50% 0%;
+        }
+        60% {
+            border-radius: 50% 0%;
+        }
+        65% {
+            border-radius: 0% 50%;
+        }
+        75% {
+            border-radius: 0% 50%;
+        }
+        80% {
+            border-radius: 50% 50%;
+        }
+        95% {
+            border-radius: 50% 50%;
+        }
+        100% {
+            border-radius: 0% 50%;
+        }
+    }
+    
+    @-moz-keyframes shapechange {
+        0% {
+            border-radius: 50% 50%;
+        }
+        15% {
+            border-radius: 0% 50%;
+        }
+        30% {
+            border-radius: 50% 50%;
+        }
+        45% {
+            border-radius: 50% 0%;
+        }
+        60% {
+            border-radius: 50% 50%;
+        }
+        100% {
+            border-radius: 50% 50%;
+        }
+    }
+    
+    @-o-keyframes shapechange {
+        0% {
+            border-radius: 50% 50%;
+        }
+        15% {
+            border-radius: 0% 50%;
+        }
+        30% {
+            border-radius: 50% 50%;
+        }
+        45% {
+            border-radius: 50% 0%;
+        }
+        60% {
+            border-radius: 50% 50%;
+        }
+        100% {
+            border-radius: 50% 50%;
+        }
+    }
+    
+    @keyframes shapechange {
+        0% {
+            border-radius: 50% 50%;
+        }
+        15% {
+            border-radius: 0% 50%;
+        }
+        30% {
+            border-radius: 50% 50%;
+        }
+        45% {
+            border-radius: 50% 0%;
+        }
+        60% {
+            border-radius: 50% 50%;
+        }
+        100% {
+            border-radius: 50% 50%;
+        }
+    }
+    
+    @media only screen and (max-device-width: 480px) {
         .container {
-            visibility: none;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 50px;
-            padding-left: 15px;
-            padding-right: 15px;
-            width: 360px;
-            text-align: center;
+            margin-right: 0;
+            margin-left: 0;
         }
-        
-        .container:after {
-            clear: both;
-        }
-        
-        .container .image {
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -webkit-animation: shapechange 15s infinite ease-out; 
-            -moz-animation:    shapechange 15s infinite ease-out;
-            -o-animation:      shapechange 15s infinite ease-out; 
-            animation:         shapechange 15s infinite ease-out; 
-
-        }
-        
         .container h1 {
-            font: 60px/1.2 'Pacifico', Helvetica, sans-serif;
+            font: 50px/1.2 'Pacifico', Helvetica, sans-serif;
             color: #404d5b;
         }
-	.container p {
-            font: 18px/1.5 'Roboto', sans-serif;
-            color: #404d5b;
-        }
-        i{
-            padding: 10px;
-        }
-        a{
-             color: #404d5b;
-        }
-        @-webkit-keyframes shapechange {
-         0%   { border-radius: 0% 50%; }
-         10%   { border-radius: 0% 50%; }
-         15%   { border-radius: 50% 0%; }
-         25%   { border-radius: 50% 0%; }
-         30%   { border-radius: 50% 50%; }
-         45%   { border-radius: 50% 50%; }
-         50%   { border-radius: 50% 0%; }
-         60%   { border-radius: 50% 0%; }
-         65%   { border-radius: 0% 50%; }
-         75%   { border-radius: 0% 50%; }
-         80%   { border-radius: 50% 50%; }
-         95% { border-radius: 50% 50%; }
-         100% { border-radius: 0% 50%; }
-        }
-        @-moz-keyframes shapechange {
-         0%   { border-radius: 50% 50%; }
-         15%   { border-radius: 0% 50%; }
-         30%   { border-radius: 50% 50%; }
-         45%   { border-radius: 50% 0%; }
-         60%   { border-radius: 50% 50%; }
-         100% { border-radius: 50% 50%; }
-        }
-        @-o-keyframes shapechange {
-         0%   { border-radius: 50% 50%; }
-         15%   { border-radius: 0% 50%; }
-         30%   { border-radius: 50% 50%; }
-         45%   { border-radius: 50% 0%; }
-         60%   { border-radius: 50% 50%; }
-         100% { border-radius: 50% 50%; }
-        }
-        @keyframes shapechange {
-         0%   { border-radius: 50% 50%; }
-         15%   { border-radius: 0% 50%; }
-         30%   { border-radius: 50% 50%; }
-         45%   { border-radius: 50% 0%; }
-         60%   { border-radius: 50% 50%; }
-         100% { border-radius: 50% 50%; }
-        }
+    }
     </style>
     <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
@@ -113,58 +198,59 @@
     <section class='container' id="container">
         <img class="image" width="250px" height="250px" src="https://avatars3.githubusercontent.com/u/1215425">
         <h1>Shyjal Raazi</h1>
-	   <p>Startup Enthusiast</p>
+        <p>Startup Enthusiast</p>
         <a href="https://github.com/shyjal" target="_blank"><i class="fa fa-github fa-2x faa-pulse animated-hover"></i></a>
         <a href="https://angel.co/shyjal" target="_blank"><i class="fa fa-angellist fa-2x faa-pulse animated-hover"></i></a>
         <a href="https://www.linkedin.com/in/shyjal" target="_blank"><i class="fa fa-linkedin fa-2x faa-pulse animated-hover"></i></a>
         <a href="https://www.producthunt.com/@shyjal" target="_blank"><i class="fa fa-product-hunt fa-2x faa-pulse animated-hover"></i></a>
         <a href="mailto:shyjal99@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x faa-pulse animated-hover"></i></a>
     </section>
-<script>
-function fadeIn( elem, ms )
-{
-  if( ! elem )
-    return;
+    <script>
+    function fadeIn(elem, ms) {
+        if (!elem)
+            return;
 
-  elem.style.opacity = 0;
-  elem.style.filter = "alpha(opacity=0)";
-  elem.style.display = "block";
-  elem.style.visibility = "visible";
+        elem.style.opacity = 0;
+        elem.style.filter = "alpha(opacity=0)";
+        elem.style.display = "block";
+        elem.style.visibility = "visible";
 
-  if( ms )
-  {
-    var opacity = 0;
-    var timer = setInterval( function() {
-      opacity += 50 / ms;
-      if( opacity >= 1 )
-      {
-        clearInterval(timer);
-        opacity = 1;
-      }
-      elem.style.opacity = opacity;
-      elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
-    }, 50 );
-  }
-  else
-  {
-    elem.style.opacity = 1;
-    elem.style.filter = "alpha(opacity=1)";
-  }
-}
-document.addEventListener("DOMContentLoaded", function(event) { 
-    var element = document.getElementById('container');
-    fadeIn(element,3000);
-});
+        if (ms) {
+            var opacity = 0;
+            var timer = setInterval(function() {
+                opacity += 50 / ms;
+                if (opacity >= 1) {
+                    clearInterval(timer);
+                    opacity = 1;
+                }
+                elem.style.opacity = opacity;
+                elem.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+            }, 50);
+        } else {
+            elem.style.opacity = 1;
+            elem.style.filter = "alpha(opacity=1)";
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var element = document.getElementById('container');
+        fadeIn(element, 3000);
+    });
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-61217457-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-61217457-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
