@@ -35,11 +35,11 @@
         display: block;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 30px;
         /*
         padding-left: 15px;
         padding-right: 15px;*/
-        width: 375px;
+        width: 460px;
         text-align: center;
     }
     
@@ -59,11 +59,18 @@
     .container h1 {
         font: 60px/1.2 'Pacifico', Helvetica, sans-serif;
         color: #404d5b;
+        margin: 30px;
     }
     
-    .container p {
+    .container p, .container ul {
         font: 18px/1.5 'Roboto', sans-serif;
         color: #404d5b;
+        padding: 0px 10px
+    }
+
+
+    .container ul {
+    	text-align: left;
     }
     
     i {
@@ -74,6 +81,10 @@
     }
     a {
         color: #404d5b;
+    }
+
+    p.color-off {
+    	color: #afafaf;
     }
     
     @-webkit-keyframes shapechange {
@@ -201,12 +212,20 @@
     <section class='container' id="container">
         <img class="image" width="250px" height="250px" src="https://avatars3.githubusercontent.com/u/1215425">
         <h1>Shyjal Raazi</h1>
-        <p>I build products <span class="ec ec-rocket"></span> and bootstrap startups <span class="ec ec-seedling"></span> working remotely <span class="ec ec-computer"></span></p>
+        <p>Hey <span class="ec ec-wave">, I build products <span class="ec ec-rocket"></span> and bootstrap startups <span class="ec ec-seedling"></span> working remotely <span class="ec ec-computer"></span></p>
+        <p class="color-off">Feel free to connect me on</p>
+
         <a href="https://twitter.com/shyjal/" target="_blank"><i class="fa fa-twitter fa-2x faa-pulse animated-hover" aria-hidden="true"></i></a>
         <a href="https://www.instagram.com/shyjalraazi/" target="_blank"><i class="fa fa-instagram fa-2x faa-pulse animated-hover" aria-hidden="true"></i></a>
         <a href="https://stackoverflow.com/story/shyjal" target="_blank"><i class="fa fa-stack-overflow fa-2x faa-pulse animated-hover"></i></a>
         <a href="https://www.linkedin.com/in/shyjal" target="_blank"><i class="fa fa-linkedin fa-2x faa-pulse animated-hover"></i></a>
         <a href="mailto:shyjal99@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x faa-pulse animated-hover"></i></a>
+        <p class="color-off">Have a look at my recent articles</p>
+        <ul>
+        	<li><a href="https://hackernoon.com/bootstrapping-a-10k-month-chatbot-startup-in-the-pursuit-of-freedom-d98ac301528f" target="_blank">Bootstrapping a Startup in the Pursuit of Freedom</a></li>
+        	<li><a href="https://medium.com/@shyjal/coworking-spaces-in-kerala-3f4716f7efd2" target="_blank">Coworking spaces in Kerala</a></li>
+		</ul>
+		<p style="margin-top:30px;">Thank you, Have a good one! <span class="ec ec-relieved"></p>
     </section>
     <script>
     function fadeIn(elem, ms) {
