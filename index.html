@@ -114,7 +114,9 @@
     .project p {
         padding: 0px;
     }
-
+    .project .project-logo {
+        align-items: center;
+    }
     .project .project-intro {
         width: 25%;
         margin: 0px 20px;
@@ -127,6 +129,7 @@
 
     .project .project-url {
         width: 10%;
+        margin: 0px 10px;
     }
 
     @-webkit-keyframes shapechange {
@@ -241,6 +244,17 @@
             color: #404d5b;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .project {
+            display: block;
+        }
+        .project .project-intro, .project .project-meta, .project .project-url {
+            width: 100%;
+            margin: 0px 10px;
+        }
+    }
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
