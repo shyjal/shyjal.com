@@ -32,11 +32,13 @@
         display: block;
     }
     
+    p, h1, h2, h3 {
+        font-family: 'Roboto', sans-serif;
+    }
+
     .container {
         display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 25px;
+        margin: 25px auto;
         /*
         padding-left: 15px;
         padding-right: 15px;*/
@@ -87,7 +89,46 @@
     p.color-off {
     	color: #afafaf;
     }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+
+    .project > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project img {
+        width: 60px;
+    }
     
+    .project * {
+        margin: 0;
+        text-align: left;
+    }
+
+    .project p {
+        padding: 0px;
+    }
+
+    .project .project-intro {
+        width: 25%;
+        margin: 0px 20px;
+    }
+
+    .project .project-meta {
+        width: 15%;
+        margin: 0px 10px;
+    }
+
+    .project .project-url {
+        width: 10%;
+    }
+
     @-webkit-keyframes shapechange {
         0% {
             border-radius: 0% 50%;
@@ -208,25 +249,217 @@
 </head>
 <body>
     <section class='container' id="container">
-        <img class="image" width="250px" height="250px" src="https://avatars3.githubusercontent.com/u/1215425">
+        <img class="image" width="250px" height="250px" src="/me.jpg">
         <h1>Shyjal Raazi</h1>
-        <p>Builds software products <span class="ec ec-rocket"></span> bootstrap startups <span class="ec ec-seedling"></span> works remotely <span class="ec ec-computer"></span></p>
-        <p class="color-off">Products</p>
+        <p>I build software products <span class="ec ec-rocket"></span> bootstrap startups <span class="ec ec-seedling"></span> working remotely <span class="ec ec-computer"></span></p>
+        <h2>Projects</h2>
+        <p>A bunch of my projects.</p>
+
         <ul>
-        	<li><a href="https://collect.chat" target="_blank">Collect.chat</a></li>
-            <li><a href="https://www.makeachali.com" target="_blank">Make A Chali</a></li>
-        	<li><a href="https://www.producthunt.com/posts/fitbet" target="_blank">Fitbet</a></li>
-            
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/filter.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Malayalam movie Instagram filter</h3>
+                    <p class="color-off">Created this Instagram filter during Covid19 lockdown while learning about social media filters.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2020</h3>
+                    <p class="color-off">Spark AR, Reactive JS</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://www.instagram.com/a/r/?effect_id=643759276205117" target="_blank">Instagram filter</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/ra.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Reach.at</h3>
+                    <p class="color-off">Reach.at lets you replace your traditional web forms with a high converting reach.at/you conversational page.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2019</h3>
+                    <p class="color-off">React, NodeJS, MongoDB</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://reach.at" target="_blank">https://reach.at</a>
+                </div>
+            </li>
+        	<li class="project">
+                <div class="project-logo">
+                    <img src="/projects/cc.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Collect.chat</h3>
+                    <p class="color-off">Collect.chat lets you create highly engaging chatbots for your websites. Used by over 10k websites all over the world.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2017</h3>
+                    <p class="color-off">React, NodeJS, MongoDB</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://collect.chat" target="_blank">https://collect.chat</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/mac.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Makeachali messenger chatbot</h3> 
+                    <p class="color-off">Malayalam movie screenshot (plain meme) search on Facebook messenger.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2017</h3>
+                    <p class="color-off">Graph api, Algolia, NodeJS</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://m.me/makeachali" target="_blank">https://m.me/makeachali</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/converter.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Converter chatbot</h3> 
+                    <p class="color-off">A chatbot that takes in a file or a website and converts it into various formats. Grab articles from a website and get it in audio or pdf format. Convert docs and images to pdfs, csvs to excels, videos to gifs.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2017</h3>
+                    <p class="color-off">Graph api, Heroku, NodeJS</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://m.me/converterbot" target="_blank">https://m.me/converterbot</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/fitbet.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Fitbet</h3>
+                    <p class="color-off">An April fool prank product which got featured in product hunt home page on April 1st 2017</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2017</h3>
+                    <p class="color-off">React.js</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://www.producthunt.com/posts/fitbet" target="_blank">Producthunt post</a>
+                    <a href="https://www.takefitbet.com" target="_blank">https://www.takefitbet.com</a>
+                </div>
+            </li>  
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/mac.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Makeachali.com</h3>
+                    <p class="color-off">Make a chali is a simple yet powerful online Malayalam meme editor.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2016</h3>
+                    <p class="color-off">Javascript, HTML5 Canvas, Algolia</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://makeachali.com" target="_blank">https://www.makeachali.com</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/paylet.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Paylet</h3>
+                    <p class="color-off">A simple secure payment solution. A hackathon project which won the first position in UAE's largest Fintech hackathon.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2016</h3>
+                    <p class="color-off">IOS, Android</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://paylet.co" target="_blank">https://www.paylet.co</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/shopup.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Shopup</h3>
+                    <p class="color-off">Local deals and offer discovery app for UAE.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2015 - 2017</h3>
+                    <p class="color-off">IOS, Android, Angular.js</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://www.shopup.io" target="_blank">https://www.shopup.io</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/gamification.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Gamification in E-learning</h3>
+                    <p class="color-off">A hackathon project that won first position. The project was to gamify India's enterprise e-learning software - Simplilearn</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2015</h3>
+                    <p class="color-off">Angular.js, NodeJS</p>
+                </div>
+                <div class="project-url">
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/splicer.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Splicer</h3>
+                    <p class="color-off">A sociamedia interest based movie recommendation platform for indian movies.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2013</h3>
+                    <p class="color-off">Javascript, HTML5</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://www.splicer.in" target="_blank">https://www.splicer.in</a>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img src="/projects/crushbites.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Crushbites</h3>
+                    <p class="color-off">A Facebook application that pranks friends by collecting their crush names. Got 300K users within first 4 months and shutdown by Facebook due to privacy issues.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2011</h3>
+                    <p class="color-off">PHP, MySQL, Facebook API</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://apps.facebook.com/crushbites" target="_blank">https://apps.facebook.com/crushbites</a>
+                </div>
+            </li>
+                     
         </ul>
-        <p class="color-off">Writings</p>
+        <h2>Scribblings</h2>
+        <p>TBH I don't write much. But I had to write the ones below.</p>
         <ul>
         	<li><a href="https://collect.chat/blog/bootstrapping-a-chatbot-startup-in-the-pursuit-of-freedom/" target="_blank">Bootstrapping a Startup in Pursuit of Freedom</a></li>
         	<li><a href="https://medium.com/@shyjal/coworking-spaces-in-kerala-3f4716f7efd2" target="_blank">Coworking spaces in Kerala</a></li>
         </ul>
         <br/>
+        <p class="color-off">Let us connect</p>
         <a href="https://twitter.com/shyjal/" target="_blank"><i class="fa fa-twitter fa-2x faa-pulse animated-hover" aria-hidden="true"></i></a>
         <a href="https://www.instagram.com/shyjalraazi/" target="_blank"><i class="fa fa-instagram fa-2x faa-pulse animated-hover" aria-hidden="true"></i></a>
-        <a href="https://stackoverflow.com/story/shyjal" target="_blank"><i class="fa fa-stack-overflow fa-2x faa-pulse animated-hover"></i></a>
         <a href="https://www.linkedin.com/in/shyjal" target="_blank"><i class="fa fa-linkedin fa-2x faa-pulse animated-hover"></i></a>
         <a href="mailto:me@shyjal.com" target="_blank"><i class="fa fa-envelope-o fa-2x faa-pulse animated-hover"></i></a>
         
