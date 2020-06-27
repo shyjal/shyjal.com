@@ -93,7 +93,7 @@
     .project {
         display: flex;
         justify-content: center;
-        margin: 50px 0px;
+        margin: 75px 0px;
     }
 
     .project > div {
@@ -118,7 +118,7 @@
         align-items: center;
     }
     .project .project-intro {
-        width: 25%;
+        width: 20%;
         margin: 0px 20px;
     }
 
@@ -128,8 +128,9 @@
     }
 
     .project .project-url {
-        width: 20%;
+        width: 15%;
         margin: 0px 10px;
+        word-wrap: break-word;
     }
 
     .down  {
@@ -270,28 +271,9 @@
     <section class='container' id="container">
         <img class="image" width="250px" height="250px" src="/me.jpg">
         <h1>Shyjal Raazi</h1>
-        <p>I build software products <span class="ec ec-rocket"></span> bootstrap startups <span class="ec ec-seedling"></span> working remotely <span class="ec ec-computer"></span></p>
+        <p>I make software products & startups <span class="ec ec-rocket"></span><span class="ec ec-seedling"></span> working remotely <span class="ec ec-computer"></span></p>
         <h2>Projects</h2>
-        <p>A bunch of my projects.</p>
-
         <ul>
-            <li class="project">
-                <div class="project-logo">
-                    <img style="border-radius: 15px;" src="/projects/filters.png"/>
-                </div>
-                <div class="project-intro">
-                    <h3>Instagram filters</h3>
-                    <p class="color-off">Created few funny Instagram filters during Covid-19 lockdown. Got more than 10M impressions in first week.</p>
-                </div>
-                <div class="project-meta">
-                    <h3>2020</h3>
-                    <p class="color-off">Spark AR, Reactive JS</p>
-                </div>
-                <div class="project-url">
-                    <a href="https://instagram.com/a/r/?effect_id=540293193524657" target="_blank">Guess  Malayalam Movie</a>
-                    <a href="https://instagram.com/a/r/?effect_id=582422242670702" target="_blank">Don't Blink Challenge</a>
-                </div>
-            </li>
             <li class="project">
                 <div class="project-logo">
                     <img src="/projects/ra.png"/>
@@ -304,10 +286,40 @@
                     <h3>2020</h3>
                     <p class="color-off">React, NodeJS, MongoDB</p>
                 </div>
+                <div class="project-meta">
+                    <p class="color-off">Got initial customers from Viralloops invite campaign ran before launch.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Freemium Subscription plan</p>
+                </div>
                 <div class="project-url">
                     <a href="https://reach.at" target="_blank">https://reach.at</a>
                 </div>
             </li>
+            <li class="project">
+                <div class="project-logo">
+                    <img style="border-radius: 15px;" src="/projects/filters.png"/>
+                </div>
+                <div class="project-intro">
+                    <h3>Instagram filters</h3>
+                    <p class="color-off">Created a few funny Instagram filters during Covid-19 lockdown. Got more than 10M impressions in first week.</p>
+                </div>
+                <div class="project-meta">
+                    <h3>2020</h3>
+                    <p class="color-off">Spark AR, Reactive JS</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Asked influencers and celebrities to try out the filter.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Non profit</p>
+                </div>
+                <div class="project-url">
+                    <a href="https://instagram.com/a/r/?effect_id=540293193524657" target="_blank">Guess Mallu Movie</a>
+                    <a href="https://instagram.com/a/r/?effect_id=582422242670702" target="_blank">Don't Blink Challenge</a>
+                </div>
+            </li>
+
         	<li class="project">
                 <div class="project-logo">
                     <img src="/projects/cc.png"/>
@@ -319,6 +331,12 @@
                 <div class="project-meta">
                     <h3>2017</h3>
                     <p class="color-off">React, NodeJS, MongoDB</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Initial customers came from Producthunt and then took off using poweredby link on their websites.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Freemium Subscription plan</p>
                 </div>
                 <div class="project-url">
                     <a href="https://collect.chat" target="_blank">https://collect.chat</a>
@@ -334,7 +352,13 @@
                 </div>
                 <div class="project-meta">
                     <h3>2017</h3>
-                    <p class="color-off">Graph api, Algolia, NodeJS</p>
+                    <p class="color-off">Graph API, Algolia, NodeJS</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Promoted chatbot using makeachali.com which already got a strong userbase.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Non profit</p>
                 </div>
                 <div class="project-url">
                     <a href="https://m.me/makeachali" target="_blank">https://m.me/makeachali</a>
@@ -350,7 +374,13 @@
                 </div>
                 <div class="project-meta">
                     <h3>2017</h3>
-                    <p class="color-off">Graph api, Heroku, NodeJS</p>
+                    <p class="color-off">Graph API, Heroku, NodeJS</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">The project was part of Facebook messenger challenge and hence featured in few online media.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Non profit</p>
                 </div>
                 <div class="project-url">
                     <a href="https://m.me/converterbot" target="_blank"  class="down">https://m.me/converterbot</a>
@@ -362,11 +392,17 @@
                 </div>
                 <div class="project-intro">
                     <h3>Fitbet</h3>
-                    <p class="color-off">An April fool prank product which got featured in product hunt home page on April 1st 2017</p>
+                    <p class="color-off">An April fool prank product which faked as an app that gives back the money you paid first only if you work out daily.</p>
                 </div>
                 <div class="project-meta">
                     <h3>2017</h3>
                     <p class="color-off">React.js</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Launched on producthunt on April 1st and got attention as a prank product.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Non profit</p>
                 </div>
                 <div class="project-url">
                     <a href="https://www.producthunt.com/posts/fitbet" target="_blank">Producthunt post</a>
@@ -385,6 +421,12 @@
                     <h3>2016</h3>
                     <p class="color-off">Javascript, HTML5 Canvas, Algolia</p>
                 </div>
+                <div class="project-meta">
+                    <p class="color-off">Contacted group admin of one of the top meme group ICU to post about the new meme maker app.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Non profit</p>
+                </div>
                 <div class="project-url">
                     <a href="https://makeachali.com" target="_blank">https://www.makeachali.com</a>
                 </div>
@@ -400,6 +442,12 @@
                 <div class="project-meta">
                     <h3>2016</h3>
                     <p class="color-off">IOS, Android</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Expected to launch in partnership with the bank that conducted the hackathon.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Commissions from merchants accepting payments</p>
                 </div>
                 <div class="project-url">
                     <a href="https://paylet.co" target="_blank"  class="down">https://www.paylet.co</a>
@@ -417,6 +465,12 @@
                     <h3>2015 - 2017</h3>
                     <p class="color-off">IOS, Android, Angular.js</p>
                 </div>
+                <div class="project-meta">
+                    <p class="color-off">Flyers in top supermarkets across UAE and word of mouth publicity.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Subscription from merchants who list their products</p>
+                </div>
                 <div class="project-url">
                     <a href="https://www.shopup.io" target="_blank"  class="down">https://www.shopup.io</a>
                 </div>
@@ -433,7 +487,14 @@
                     <h3>2015</h3>
                     <p class="color-off">Angular.js, NodeJS</p>
                 </div>
+                <div class="project-meta">
+                    <p class="color-off">Never launched</p>
+                </div>
+                <div class="project-meta">
+                    <p>N/A</p>
+                </div>
                 <div class="project-url">
+                   
                 </div>
             </li>
             <li class="project">
@@ -447,6 +508,12 @@
                 <div class="project-meta">
                     <h3>2013</h3>
                     <p class="color-off">Javascript, HTML5</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Never launched</p>
+                </div>
+                <div class="project-meta">
+                    <p>N/A</p>
                 </div>
                 <div class="project-url">
                     <a href="https://www.splicer.in" target="_blank"  class="down">https://www.splicer.in</a>
@@ -463,6 +530,12 @@
                 <div class="project-meta">
                     <h3>2011</h3>
                     <p class="color-off">PHP, MySQL, Facebook API</p>
+                </div>
+                <div class="project-meta">
+                    <p class="color-off">Shared among friends in college and then it went viral because of the inbuilt sharing feature.</p>
+                </div>
+                <div class="project-meta">
+                    <p>Display ads inside web app</p>
                 </div>
                 <div class="project-url">
                     <a href="https://apps.facebook.com/crushbites" target="_blank"  class="down">https://apps.facebook.com/crushbites</a>
